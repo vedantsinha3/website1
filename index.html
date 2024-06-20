@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Vedant Sinha</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/f245f4f523.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" style="width: 40px; height: auto;" alt="Logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm <span> Vedant</span><br> from the Bay Area</h1>
+        </div>
+    </div>
+</div>
+    <!-- ----------about------------> 
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <!-- Column for Profile Image -->
+                <div class="about-col-1">
+                    <img src="images/background.png" alt="Background Image" style="width:100%; height:auto;">
+                </div>
+                <!-- Column for About Me Content -->
+                <div class="about-col-2">
+                    <div class="about-container">
+                        <h2 class="sub-title">About Me</h2>
+                        <h2 class ="text">I'm a Computer Science Engineering student from California with a passion for technology and innovation. 
+                            I enjoy exploring new technologies and constantly seeking out new challenges to enhance my skills. 
+                            My enthusiasm for problem-solving and creating efficient solutions drives me to excel in the tech field.
+                            In my free time, I love watching and playing sports, particularly basketball. The teamwork and strategic thinking involved in sports translate well into my approach to coding and project management. 
+                            Additionally, I'm an avid video gamer, always on the lookout for new games to challenge myself and unwind. I also enjoy working on personal projects, ranging from coding small applications to experimenting with new tech gadgets.</h2>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id = "skills">
+                                <ul>
+                                    <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                                    <li><span>Web Development</span><br>Web app Development</li>
+                                    <li><span>App Development</span><br>Building andriod/iOS apps</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id = "experience">
+                                <ul>
+                                    <li><span>theCoderSchool</span><br>Tutor for Python, C++, Scratch</li>
+                                    <li><span>SandStone INC</span><br>Data handling</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id = "education">
+                                <ul>
+                                    <li><span>UC Merced</span><br>Pursing Bachelors Of Science in Computer Science and Engineering. 2022-2026</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div>
+<!-- services -->
+<div id="services">
+    <div class="container">
+        <h1 class ="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2 class = "freelance">Freelance Writing </h2>
+                <h1 class = "description1" >Offer freelance writing services tailored to your needs. With a knack for storytelling and a passion for research, I can craft engaging articles, blog posts, and social media content that resonate with your audience.</h1>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Graphic Design Services</h2>
+                <h1 class = "description2" >Create a lasting impression with a unique logo and cohesive branding. We develop logos that capture the essence of your brand and provide a full suite of branding services</h1>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Web Design</h2>
+                <h1 class = "description3" >Specialize in building bespoke websites that are not only visually stunning but also optimized for performance and user experience</h1>
+                <a href="#">Learn more</a>
+            </div> 
+        </div>
+    </div>
+</div>
+
+<!-- portfolio -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work.webp">
+                <div class="layer">
+                    <h3>Wordle Game Rebuild and Bot</h3>
+                    <p>Designed a custom Wordle game with personalized features and developed an AI solver bot for efficient puzzle solving. Utilized JavaScript and Python for game logic and bot algorithms.
+                        Skills Used: JavaScript, Python, HTML/CSS, AI Algorithms, UX/UI Design, Game Development 
+                    </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work1.jpg">
+                <div class="layer">
+                    <h3>Tic Tac Toe Game Rebuild and Bot</h3>
+                    <p>Rebuilt the Tic Tac Toe game with advanced gameplay options and created an AI bot using the minimax algorithm for strategic play. Focused on user experience and flexible game settings.Expanded gameplay possibilities with customizable game rules and aesthetic improvements.
+                        Delivered a flexible bot opponent with varying difficulty settings to enhance user engagement.
+                        Provided educational insights by demonstrating game theory and algorithmic decision-making through the bot’s play strategy.</p>
+                    <p>Skills Used: JavaScript, Python, CSS, Algorithm Development, Game Theory, Graphic Design</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.gif">
+                <div class="layer">
+                    <h3>Word Search Game Rebuild and Bot</h3>
+                    <p>Developed customized Word Search games with unique grid designs and a solver bot to quickly find solutions. Implemented JavaScript and Python for game customization and bot functionality.
+                       Skills Used: JavaScript, Python, HTML/CSS, Problem Solving, Game Design, Educational Tools
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class = "sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> vedantsinha3@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> (925)-352-0468</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/vedant.sinha.52/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/vedantsinha3/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/vedant-sinha-619032295/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">hello</span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Vedant Sinha</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+   
+    function openmenu() {
+        sidemeu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemeu.style.right = "-200px";
+    }
+
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwlHVht5_r51yUnqf16LUGd49iNU8lJOavXukNxijSWnOaPZfDjePaKXQmN4hWmLkI_cg/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
